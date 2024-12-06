@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script>
+    var data = {{ data | tojson }} 
+
+    $(document).ready(function() {
+        
+    });
+    
+</script>  
+
+<div class="container-fluid">
+    Home
+</div>
+{% endblock %}
