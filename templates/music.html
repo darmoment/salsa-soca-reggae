@@ -1,0 +1,109 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script>
+    var data = {{ data | tojson }} 
+
+    $(document).ready(function() {
+        
+    });
+    
+</script>  
+
+<div class="container-fluid">
+    <h1>Afro-Cuban Music</h1>
+
+    <section id="overview">
+        <h2>Overview</h2>
+        <p>A socio-musical characteristic of African music is collective participation, a feature typical of many classless societies that lack occupational distinctions between performers and consumers. It is extremely common for all or most members of a rural community to participate actively in musical events, whether by singing, clapping, dancing, or playing instruments.</p>
+        <p>This convention accompanies a conception of musical talent as something innate, rather than being the property only of specialists. The persistence of communal music-making in the New World has naturally been dependent on social structure as a whole, but it has been perpetuated by the fact that most Afro-Caribbeans have tended to occupy the same lower social classes.</p>
+    </section>
+
+    <section id="musical-elements">
+        <h2>Musical Elements</h2>
+        <h3>Rhythm</h3>
+        <p>Rhythm is one of the most distinctly musical features. African music has rich melodies and timbres, but rhythm is its most important parameter. It helps to distinguish songs and genres and commands the focus of the performers’ and listeners’ attention. Rhythms are also often uniquely complex. Much of the rhythmic complexity derives from the interaction of regular pulses and offbeats. When multiple pulse patterns are combined, it is called polyrhythm or polymeter.</p>
+        <h4>Here's an example</h4>
+        <img src="../static/assets/img/polyrhythm.png" width="700px">
+        <p>Listen to the parts here</p>
+        <div class="audio-example">
+            <span>Bell: </span>
+            <audio controls>
+                <source src="../static/assets/audio/bell.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-example">
+            <span>Drum A: </span>
+            <audio controls>
+                <source src="../static/assets/audio/drum-a.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-example">
+            <span>Drum B: </span>
+            <audio controls>
+                <source src="../static/assets/audio/drum-b.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-example">
+            <span>All: </span>
+            <audio controls>
+                <source src="../static/assets/audio/all.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        
+        <h3>Call and Response</h3>
+        <p>Call and response is another widespread feature of African music which is well suited to communal performance. It is also found in many Afro-Caribbean music. A related characteristic is building pieces based on repetition. A short musical phrase can be built upon by altering the pattern or adding a drum solo. This structure contrasts with that of European-derived music which typically has a set and symmetrical structure.</p>
+
+        <div class="video-link">
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/Gh9eH6ZTk-U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div>African Call and Response - Chukwu Nonso</div>
+        </div>
+    </section>
+
+    <section id="yoruba-influence">
+        <h2>Yoruba Influence</h2>
+        <p>Enslaved Africans brought to Cuba came from various regions and ethnic groups. The larger the group, the easier it was to maintain their musical and religious traditions. One of the two largest ethnic groups brought to Cuba was the Yoruba, most of whom were brought in the nineteenth century to central and western Cuba from Nigeria. Although a lot of Yoruba culture was lost in slavery, the Cuban Yoruba (called lucumí) maintained and reinvented most of their traditional music and religion.</p>
+        <h3>Santería</h3>
+        <p>Santería is a syncretic religion combining traditional Yoruba elements with Roman Catholicism. West African deities or orishas were consolidated into Afro-Cuban cultures and identified with Catholic saints. Music plays a significant role in Santería. A <i>toque de santo</i> is a Santería event where drummers play pre-composed rhythmic patterns to honor orishas. The lead vocalist encourages participants to sing and dance, ultimately helping induce spirit possession.</p>
+    </section>
+
+    <section id="genres">
+        <h2>Genres</h2>
+
+        <h3>Rumba</h3>
+        <p><strong>Overview:</strong> Rumba is one of the most popular and influential Afro-Cuban secular genres. It emerged as an entertainment genre in the mid-1800s. The most popular kind of rumba is the guaguancó.</p>
+        <p><strong>Ensemble:</strong> 3 congas, two pairs of tapped sticks, lead singer, chorus.</p>
+        <p><strong>Musical Characteristics:</strong></p>
+        <ul>
+            <li>The guaguancó features an ostinato played by one or two drummers on differently tuned congas.</li>
+            <li>Another player taps a rhythm on the clave.</li>
+            <li>The other conga player improvises on the quinto (a higher-pitched instrument).</li>
+            <li>The vocalist sings the canto over this intricate rhythm, followed by a call-and-response montuno section with the chorus.</li>
+        </ul>
+        <p><strong>Connection:</strong> Although it may derive from secular dances performed by Congolese slaves in Cuba, the genre is entirely derived in Cuba. The drumming patterns align with Yoruba traditions.</p>
+        <div class="video-link">
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/JaNfdh0iWCg?si=Mv8M0-jpzLKDFt1c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div>Rumba Guaguancó Dance - Domingo Pau & Dayana Torres</div>
+        </div>
+
+        <h3>Son Cubano</h3>
+        <p><strong>Overview:</strong> The Son developed from musicians in eastern Cuba singing simple call-and-response choruses with instruments like the tres, bongo, guitar, and marimbula. When this music reached Havana, it was enriched by local Afro-Cubans to become the form it is today.</p>
+        <p><strong>Ensemble:</strong> vocals, piano, guitar/tres, trumpet, double bass, congas, bongos, timbales, claves, maracas, güiro.</p>
+        <p><strong>Musical Characteristics:</strong></p>
+        <ul>
+            <li>Two-part form: an initial song section followed by a rhythmic montuno.</li>
+            <li>Anticipated bass pattern omitting the downbeat.</li>
+            <li>Rhythm section aligned with the clave pattern.</li>
+        </ul>
+        <p><strong>Connection:</strong> Call and response and clave derive from African traditions.</p>
+        <div class="video-link">
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/0akHBBpEK2o?si=wqWwOODtJ1xDHym4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div>El Manisero - Leo Cabezas</div>
+        </div>
+    </section>
+</div>
+{% endblock %}
