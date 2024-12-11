@@ -152,15 +152,33 @@ Waiting Ajax stuff
         margin: auto;
 
         .group{
-            display: flex;
-            justify-content: space-between;
-            margin: 50px 0px;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
 
-            .description{
-                width: 50%;
-                margin: auto 0;
-                font-size: 19px;
+            .ingroup{
+                display: flex;
+                justify-content: space-between;
+                
+
+                .description{
+                    width: 50%;
+                    margin: auto 0;
+                    font-size: 19px;
+                }
             }
+        }
+
+        #elegua{
+            background-color: #002b8fbb;
+        }
+
+        #oggun{
+            background-color: #002b8fbb;
+        }
+
+        #son{
+            background-color: #002b8fbb;
         }
 
     }
