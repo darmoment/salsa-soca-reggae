@@ -60,3 +60,17 @@ Waiting Ajax stuff
     font-weight: bold;
     text-decoration: underline;
 }*/
+
+.danceTab{
+    .danceNav{
+        display: flex;
+        justify-content: center;
+        .cards{
+            width: 400px;
+            height: 300px;
+            color: red;
+            margin: 30px;
+        }
+    }
+    
+}

@@ -7,6 +7,10 @@ app = Flask(__name__)
 def home():
     return render_template('home.html', data={}) 
 
+@app.route('/dance')
+def dance():
+    return render_template('dance.html', data={}) 
+
 @app.route('/music')
 def music():
     return render_template('music.html', data={}) 
