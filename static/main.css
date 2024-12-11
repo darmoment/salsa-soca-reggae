@@ -163,6 +163,13 @@ Waiting Ajax stuff
     
 }
 
+.musicTab {
+    h1 {
+        text-align: center;
+    }
+
+    
+}
 .navstuff {
     margin: auto;
     align-items: center;
