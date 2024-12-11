@@ -64,12 +64,58 @@ Waiting Ajax stuff
 .danceTab{
     .danceNav{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        width: 70%;
+        margin: auto;
         .cards{
-            width: 400px;
+            width: 300px;
             height: 300px;
-            color: red;
+            background-color: red;
             margin: 30px;
+            color: white;
+            font
+
+            a{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        #eleguaCard{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://www.postposmo.com/wp-content/uploads/2020/12/ELEGUA-6.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        #oshunCard{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://i.ytimg.com/vi/2yFUouzE7Yk/maxresdefault.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        #oggunCard{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://yorubaandabo.wordpress.com/wp-content/uploads/2015/07/oggun.jpg?w=300&h=200);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        #rumbaCard{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://i.ytimg.com/vi/Wi7FFypHLpM/maxresdefault.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        #sonCard{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://www.cubanschool.co.uk/uploads/5/6/7/6/56763239/damarys-juan-carlos-2_1_orig.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        #salsaCard{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://i.ytimg.com/vi/fJADF47QTS0/sddefault.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
         }
     }
     
