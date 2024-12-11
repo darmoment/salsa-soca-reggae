@@ -62,15 +62,105 @@ Waiting Ajax stuff
 }*/
 
 .danceTab{
+    .top{
+        
+        height: 100vh;
+
+        .topText{
+            text-align: center;
+
+            h1{
+                margin: 1.5rem 0;
+            }
+
+            h2{
+                font-size: 1.7rem;
+            } 
+        }
+    }
+
     .danceNav{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        .cards{
-            width: 400px;
-            height: 300px;
-            color: red;
-            margin: 30px;
+        width: 70%;
+        margin: auto;
+
+        a{
+            text-decoration-color: white;
         }
+
+        .cards{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            margin: 30px;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            position: relative;
+            
+            p{
+                position: absolute;
+                bottom: 0;
+                margin-left: 10px;
+            }
+            
+        }
+
+        #eleguaCard{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://www.postposmo.com/wp-content/uploads/2020/12/ELEGUA-6.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        #oshunCard{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://i.ytimg.com/vi/2yFUouzE7Yk/maxresdefault.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        #oggunCard{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://yorubaandabo.wordpress.com/wp-content/uploads/2015/07/oggun.jpg?w=300&h=200);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        #rumbaCard{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://i.ytimg.com/vi/Wi7FFypHLpM/maxresdefault.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        #sonCard{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://www.cubanschool.co.uk/uploads/5/6/7/6/56763239/damarys-juan-carlos-2_1_orig.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        #salsaCard{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://i.ytimg.com/vi/fJADF47QTS0/sddefault.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+    }
+
+    .groups{
+        width: 70%;
+        margin: auto;
+
+        .group{
+            display: flex;
+            justify-content: space-between;
+            margin: 50px 0px;
+
+            .description{
+                width: 60%;
+                margin: auto 0;
+                font-size: 19px;
+            }
+        }
+
     }
     
 }
