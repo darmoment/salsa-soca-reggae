@@ -61,6 +61,10 @@ Waiting Ajax stuff
     text-decoration: underline;
 }*/
 
+.navbar{
+    background-color: #CF142B !important;
+}
+
 .danceTab{
     .top{
 
@@ -159,6 +163,37 @@ Waiting Ajax stuff
             }
         }
 
+    }
+    
+}
+
+.homeTab{
+    .top{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        h1{
+            margin: 1.5rem 0;
+        }
+
+        p{
+            font-size: 1.7rem;
+        } 
+    }
+
+    .navstuff{
+        margin: auto;
+        width: 70%;
+        
+
+        .items{
+            display: flex;
+            justify-content: space-evenly;
+
+            .homeCard{
+                text-align: center;
+            }   
+        }
     }
     
 }
