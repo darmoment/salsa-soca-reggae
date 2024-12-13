@@ -299,7 +299,26 @@ Waiting Ajax stuff
 
     
 }
+
 .navstuff {
     margin: auto;
     align-items: center;
+}
+
+.citedTab{
+    h1{
+        text-align: center;
+        margin: 30px;
+    }
+
+    p{
+        font-size: 21px;
+        text-indent: -50px;
+        margin-left: 60px;
+    }
+
+    .textGroup{
+        width: 80%;
+        margin: 50px auto;
+    }
 }

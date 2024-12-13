@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script>
+    var data = {{ data | tojson }} 
+
+    $(document).ready(function() {
+        
+    });
+    
+</script>  
+
+<div class="container-fluid citedTab">
+    <h1>Works Cited</h1>
+    <div class="textGroup">
+        <p>Jeffries, Bayyinah S. “Oshun.” Encyclopædia Britannica, Encyclopædia Britannica, inc., www.britannica.com/topic/Oshun. Accessed 13 Dec. 2024. </p>
+        <hr/>
+        <p> Manuel, Peter, and Michael D. Largey. Caribbean Currents: Caribbean Music from Rumba to Reggae. Temple University Press, 2016.</p>
+        <hr/>
+        <p>“Ogun: Orisha of Iron and War.” Original Botanica, originalbotanica.com/blog/orishas-ogun-santeria?srsltid=AfmBOop6-dPZOJ4XQU1n3SufyKGkbPoU1K1PNvSQR_i1IRtve3ih1aCt. Accessed 13 Dec. 2024. </p>
+        <hr/>
+        <p>“Rueda de Casino.” Rueda.Casino, 4 Feb. 2024, rueda.casino/rueda-structures/rueda-de-casino/. </p>
+        <hr/>
+        <p>World Music Network. “Cuba: Son and Afro-Cuban Music.” World Music Network, 2011, worldmusic.net/blogs/guide-to-world-music/cuba-son-and-afro-cuban-music. </p>
+    </div>
+</div>
+{% endblock %}

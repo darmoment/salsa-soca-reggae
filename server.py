@@ -14,5 +14,10 @@ def dance():
 @app.route('/music')
 def music():
     return render_template('music.html', data={}) 
+
+@app.route('/cited')
+def cited():
+    return render_template('cited.html', data={}) 
+
 if __name__ == '__main__':
     app.run(debug=True)
