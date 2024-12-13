@@ -19,5 +19,9 @@ def music():
 def cited():
     return render_template('cited.html', data={}) 
 
+@app.route('/instruments')
+def instruments():
+    return render_template('instruments.html', data={})
+
 if __name__ == '__main__':
     app.run(debug=True)

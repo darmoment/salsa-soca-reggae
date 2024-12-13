@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script>
+    var data = {{ data | tojson }} 
+
+    $(document).ready(function() {
+        
+    });
+    
+</script>
+
+<div class="container-fluid instrumentsTab">
+    <h1>Afro-Cuban Instruments</h1>
+
+    <section id="introduction">
+        <p>We will view the various instruments used in Afro-Cuban music and traditions through a chronological lens and delve into the significance of why and how certain instruments came about to being used.</p>
+
+        <h2>Roots and Origin</h2>
+        <p>At the heart of this musical journey are instruments that carry deep spiritual and historical significance, particularly those brought by West African slaves. When looking at the African influence in Afro-Cuban music, a main component is the signature polyrhythmic beat. These are achieved through special drums, mainly those acquired from Yoruba influence when slaves from West Africa first came to Cuba. The Bata drums are a collection of these special drums, made up of the Okonkolo (the smallest), Itoteles (the medium), and Iya (the master drum) drums.</p>
+        <p>The Abakua also provides more insight into these traditions. It is a secret society of men where members, who are called Nanigos, perform ceremonial dances accompanied by drums and vocals. The drum ensemble was called the Biankomeko, and this was usually accompanied by other percussion like cowbells. In addition, there was also usually a sacred hidden drum called the Ekue.</p>
+        <p>It is important to note that many of these early traditions were religious and spiritual ones that were preserved as groups of people came to Cuba. These practices helped to honor their roots and keep their history and identity alive while in a new environment.</p>
+        <hr/>
+        <h2>Culture Mix</h2>
+        <p>As African peoples became more settled in Cuba, the cultures of the indigenous population, the Spanish conquerors, and the slaves all began to mix, especially in the music of the locals. When slavery was abolished in 1886, there was a huge population of people looking for work and a shortage of housing. This impacted the start of impromptu villages that emerged and became hubs of music making.</p>
+        <p>Most notably, the Rumba - which most likely came from the Bantu people of West Africa, emerged around this time period and was mainly performed with a collection of household instruments and different types of percussion. This consisted mainly of conga drums from the Congo, keeping a tumbao rhythm and clave sticks, keeping the clave rhythm.</p>
+        <p>Another type of music that was popular at this time was the Guijira - the country music of peasant farmers in Cuba. The instruments consisted of a guiro, the clave sticks, the laud and tres guitars - which come from Spanish influence.</p>
+        <hr/>
+        <h2>To the World!</h2>
+        <p>During the mid-1900s, there was a push for a more national sound of Cuba, one that honored both the traditional sounds of Cuban music and also honored the African heritage as well, celebrating the idea of Afro-Cubanismo. As Cuban music became more popular worldwide, Arsenio Rodriguez, a tres player and also a member of the Abakua, added more instruments to create a more worldly and yet uniquely dynamic sound. Mainly, timbales, cowbells, and trumpets.</p>
+
+        <p>An example:</p>
+        <div class="video-link">
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/YtjkYNVhU70?si=w41v_T1ejGerv9gw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div>Mami Me Gusto - Arsenio Rodriguez</div>
+        </div>
+    </section>
+    <section id="gallery-section">
+        <h2>Gallery of Instruments</h2>
+        <p>Swipe through our gallery of instruments and click the links below to see them in action!</p>
+        <div class="gallery">
+            <ul class="list">
+                <li class="item">
+                    <div class="content">
+                        <h3>Cowbells</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNO-7SDsC-diRVhvROW-NYgWU0oYTZIAR8pg&s" alt="Cowbells">
+                        <p><a target="_blank" href="https://www.youtube.com/watch?v=X99IQncMUnU">Watch A Video</a></p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="content">
+                        <h3>Timbales</h3>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Timbalesy_HLTBR-1011_firmy_Hayman.jpg" alt="Timbales" height="270px">
+                        <p><a target="_blank" href="https://www.youtube.com/watch?v=kq6PDicCx9Q">Watch A Video</a></p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="content">
+                        <h3>Bata Drums</h3>
+                        <img src="https://cdn.abicart.com/shop/29272/art72/h2257/180042257-origpic-b58311.jpg" alt="Bata Drums">
+                        <p><a target="_blank" href="https://www.youtube.com/watch?v=qYqY8x3U9MA">Watch A Video</a></p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="content">
+                        <h3>Conga Drums</h3>
+                        <img src="https://bigbangdist.com/wp-content/uploads/2022/03/LP522XMSB_1.jpg" alt="Conga Drums">
+                        <p><a target="_blank" href="https://www.youtube.com/watch?v=m33gcGsjo0w">Watch A Video</a></p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="content">
+                        <h3>Claves</h3>
+                        <img src="https://www.nuevolutionsalsa.com/wp-content/uploads/2016/11/claves-1.jpg" alt="Claves">
+                        <p><a target="_blank" href="https://www.youtube.com/watch?v=BODYFCnWLC0">Watch A Video</a></p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="content">
+                        <h3>Tres Guitar</h3>
+                        <img src="https://cdn11.bigcommerce.com/s-97c0z6ew/images/stencil/1280x1280/products/1513/3945/havana1__58924.1499724353.jpg?c=2" alt="Tres Guitar">
+                        <p><a target="_blank" href="https://www.youtube.com/watch?v=rLhnXHNXxrc">Watch A Video</a></p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="content">
+                        <h3>Trumpets</h3>
+                        <img src="https://m.media-amazon.com/images/I/51bTAwoAGHL.jpg" alt="Trumpets">
+                        <span><a target="_blank" href="https://www.youtube.com/watch?v=Q8g3cey1Rio">Watch A Video</a></span>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="content">
+                        <h3>Guiro</h3>
+                        <img src="https://ferrebeekeeper.wordpress.com/wp-content/uploads/2015/02/167178-004-01a16e18.jpg" alt="Guiro">
+                        <p><a target="_blank" href="https://www.youtube.com/watch?v=p1pxM1nfLtw">Watch A Video</a></p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="content">
+                        <h3>Maracas</h3>
+                        <img src="https://m.media-amazon.com/images/I/61cvFQVfTyL.jpg" alt="Maracas">
+                        <p><a target="_blank" href="https://www.youtube.com/watch?v=Hrhkn4QqhXs">Watch A Video</a></p>
+                    </div>
+                </li>
+            </ul>      
+        </div>
+    </section>
+</div>
+{% endblock %}
