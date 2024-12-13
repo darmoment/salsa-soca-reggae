@@ -74,13 +74,14 @@ Waiting Ajax stuff
 
         .topText{
             text-align: center;
-
+            width: 84%;
+            margin: auto;
             h1{
                 margin: 1.5rem 0;
             }
 
             h2{
-                font-size: 1.7rem;
+                font-size: 1.4rem;
             } 
         }
     }
@@ -97,8 +98,8 @@ Waiting Ajax stuff
         }
 
         .cards{
-            width: 300px;
-            height: 300px;
+            width: 250px;
+            height: 250px;
             background-color: red;
             margin: 30px;
             color: white;
@@ -114,14 +115,25 @@ Waiting Ajax stuff
             
         }
 
+
         #eleguaCard{
             background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://www.postposmo.com/wp-content/uploads/2020/12/ELEGUA-6.jpg);
             background-position: 50% 50%;
             background-size: cover;
         }
 
+        #eleguaCard:hover{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(https://www.postposmo.com/wp-content/uploads/2020/12/ELEGUA-6.jpg);
+        }
+
         #oshunCard{
             background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://i.ytimg.com/vi/2yFUouzE7Yk/maxresdefault.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        #oshunCard:hover{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(https://i.ytimg.com/vi/2yFUouzE7Yk/maxresdefault.jpg);
             background-position: 50% 50%;
             background-size: cover;
         }
@@ -132,8 +144,20 @@ Waiting Ajax stuff
             background-size: cover;
         }
 
+        #ogunCard:hover{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(https://yorubaandabo.wordpress.com/wp-content/uploads/2015/07/oggun.jpg?w=300&h=200);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
         #rumbaCard{
             background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://i.ytimg.com/vi/Wi7FFypHLpM/maxresdefault.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        #rumbaCard:hover{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(https://i.ytimg.com/vi/Wi7FFypHLpM/maxresdefault.jpg);
             background-position: 50% 50%;
             background-size: cover;
         }
@@ -144,8 +168,20 @@ Waiting Ajax stuff
             background-size: cover;
         }
 
+        #sonCard:hover{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(https://www.cubanschool.co.uk/uploads/5/6/7/6/56763239/damarys-juan-carlos-2_1_orig.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
         #salsaCard{
             background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://i.ytimg.com/vi/fJADF47QTS0/sddefault.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+        }
+
+        #salsaCard:hover{
+            background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(https://i.ytimg.com/vi/fJADF47QTS0/sddefault.jpg);
             background-position: 50% 50%;
             background-size: cover;
         }
@@ -199,7 +235,7 @@ Waiting Ajax stuff
         }
 
         p{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         } 
 
         button{
@@ -210,7 +246,7 @@ Waiting Ajax stuff
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             cursor: pointer;
         }
 
@@ -243,8 +279,8 @@ Waiting Ajax stuff
                 text-align: center;
                 border-radius: 10px;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                width: 350px;
-                height: 300px;
+                width: 300px;
+                height: 250px;
 
                 img{
                     width: 100%;
@@ -254,6 +290,7 @@ Waiting Ajax stuff
 
                 h4{
                     margin: 20px 0px;
+                    font-size: 1.2rem;
                 }
                 
             }   
