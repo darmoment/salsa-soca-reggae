@@ -19,5 +19,9 @@ def music():
 def cited():
     return render_template('cited.html', data={}) 
 
+@app.route('/quiz')
+def quiz():
+    return render_template('quiz.html', data={}) 
+
 if __name__ == '__main__':
     app.run(debug=True)

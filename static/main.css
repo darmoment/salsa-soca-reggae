@@ -63,6 +63,10 @@ Waiting Ajax stuff
 
 .navbar{
     background-color: #CF142B !important;
+
+    .navbar-brand:hover{
+        color: white;
+    }
 }
 
 .danceTab{
