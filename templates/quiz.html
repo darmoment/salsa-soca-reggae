@@ -50,9 +50,14 @@
         <section id="music-questions">
             <h2>Music Questions</h2>
             <div class="question">
-                <p>1. What term describes the interaction of multiple rhythmic patterns?</p>
-                <input type="radio" name="q1" value="polyrhythm"> Polyrhythm<br>
+                <p>1. What term describes the interaction of rhythms as heard below?</p>
+                <audio controls>
+                    <source src="../static/assets/audio/all.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <br/>
                 <input type="radio" name="q1" value="monophony"> Monophony<br>
+                <input type="radio" name="q1" value="polyrhythm"> Polyrhythm<br>
                 <input type="radio" name="q1" value="harmony"> Harmony<br>
             </div>
 
@@ -88,10 +93,14 @@
             </div>
 
             <div class="question">
-                <p>6. Which orisha dance highlights sensuality and grace?</p>
-                <input type="radio" name="q6" value="oshun"> Oshun<br>
-                <input type="radio" name="q6" value="elegua"> Elegua<br>
-                <input type="radio" name="q6" value="ogun"> Ogun<br>
+                <p>6. What is the name of the dance shown below?</p>
+                <iframe width="300" height="200"
+                    src="https://www.youtube.com/embed/7xpjG-mV5qc">
+                    </iframe>
+                <br/>
+                <input type="radio" name="q6" value="oshun"> Son<br>
+                <input type="radio" name="q6" value="elegua"> Cuban Salsa<br>
+                <input type="radio" name="q6" value="ogun"> Rumba<br>
             </div>
 
             <div class="question">
@@ -105,21 +114,21 @@
         <section id="instrument-questions">
             <h2>Instrument Questions</h2>
             <div class="question">
-                <p>8. Which instrument is commonly shaken to keep rhythm in Afro-Cuban music?</p>
-                <input type="radio" name="q8" value="maracas"> Maracas<br>
-                <input type="radio" name="q8" value="clave"> Clave<br>
-                <input type="radio" name="q8" value="congas"> Congas<br>
+                <p>8. What are Bata drums, and what are their specific types?</p>
+                <input type="radio" name="q8" value="maracas"> Conga drums from Bantu influence: Tumbo, Segundo, and Quinto<br>
+                <input type="radio" name="q8" value="clave"> Special drums from Yoruba influence: Okonkolo, Itoteles, and Iya<br>
+                <input type="radio" name="q8" value="congas">  Djembe drums from West African influence: Dounouba, Sangban, and Kenkeni<br>
             </div>
 
             <div class="question">
-                <p>9. Which small drum is often played in Afro-Cuban music?</p>
+                <p>9. What is the instrument heard below?</p>
                 <input type="radio" name="q9" value="bongos"> Bongos<br>
                 <input type="radio" name="q9" value="timbales"> Timbales<br>
                 <input type="radio" name="q9" value="djembe"> Djembe<br>
             </div>
 
             <div class="question">
-                <p>10. What string instrument is unique to Cuban music?</p>
+                <p>10. What string instrument is essential to Guijira and comes from Spanish influence?</p>
                 <input type="radio" name="q10" value="tres"> Tres<br>
                 <input type="radio" name="q10" value="guitar"> Guitar<br>
                 <input type="radio" name="q10" value="mandolin"> Mandolin<br>
@@ -141,20 +150,4 @@
     </div>
 </div>
 
-<style>
-    #quizPopup {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: white;
-        border: 2px solid black;
-        padding: 20px;
-        z-index: 1000;
-    }
-
-    .popupButtons a, .closePopup {
-        margin: 5px;
-    }
-</style>
 {% endblock %}
