@@ -7,6 +7,10 @@
     $(document).ready(function() {
         
     });
+
+    function redirectToInstruments() {
+        window.location.href = "/instruments";
+    }
     
 </script>  
 
@@ -80,7 +84,10 @@
                 </div>
             </div>
         </div>
-        
+
+        <section class="bttnContainer">
+            <button class="nextButton" onclick="redirectToInstruments()">Learn about Instruments&nbsp;&nbsp;  ➡</button>
+        </section>
     </div>
 </div>
 {% endblock %}

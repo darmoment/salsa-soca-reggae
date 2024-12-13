@@ -1,0 +1,153 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script>
+    $(document).ready(function() {
+        // Handle quiz submission
+        $("#quizForm").on("submit", function(event) {
+            event.preventDefault();
+
+            let totalQuestions = 10;
+            let correctAnswers = 0;
+
+            // Define correct answers
+            let answers = {
+                q1: "polyrhythm",
+                q2: "call-and-response",
+                q3: "clave",
+                q4: "guaguanco",
+                q5: "elegua",
+                q6: "oshun",
+                q7: "rumba",
+                q8: "maracas",
+                q9: "bongos",
+                q10: "tres"
+            };
+
+            // Check answers
+            for (let question in answers) {
+                if ($(`input[name='${question}']:checked`).val() === answers[question]) {
+                    correctAnswers++;
+                }
+            }
+
+            // Display score popup
+            let score = Math.round((correctAnswers / totalQuestions) * 100);
+            $("#quizScore").text(`Your Score: ${score}%`);
+            $("#quizPopup").show();
+        });
+
+        // Close popup
+        $(".closePopup").on("click", function() {
+            $("#quizPopup").hide();
+        });
+    });
+</script>
+
+<div class="container-fluid quizTab">
+    <h1>Quiz</h1>
+    <form id="quizForm">
+        <section id="music-questions">
+            <h2>Music Questions</h2>
+            <div class="question">
+                <p>1. What term describes the interaction of rhythms as heard below?</p>
+                <audio controls>
+                    <source src="../static/assets/audio/all.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <br/>
+                <input type="radio" name="q1" value="monophony"> Monophony<br>
+                <input type="radio" name="q1" value="polyrhythm"> Polyrhythm<br>
+                <input type="radio" name="q1" value="harmony"> Harmony<br>
+            </div>
+
+            <div class="question">
+                <p>2. Which feature of Afro-Cuban music involves a leader and a response from the group?</p>
+                <input type="radio" name="q2" value="call-and-response"> Call-and-response<br>
+                <input type="radio" name="q2" value="ostinato"> Ostinato<br>
+                <input type="radio" name="q2" value="syncopation"> Syncopation<br>
+            </div>
+
+            <div class="question">
+                <p>3. What rhythmic pattern is central to Afro-Cuban music?</p>
+                <input type="radio" name="q3" value="clave"> Clave<br>
+                <input type="radio" name="q3" value="samba"> Samba<br>
+                <input type="radio" name="q3" value="tumbao"> Tumbao<br>
+            </div>
+
+            <div class="question">
+                <p>4. What is the name of the most popular style of Rumba?</p>
+                <input type="radio" name="q4" value="guaguanco"> Guaguancó<br>
+                <input type="radio" name="q4" value="yambu"> Yambú<br>
+                <input type="radio" name="q4" value="columbia"> Columbia<br>
+            </div>
+        </section>
+
+        <section id="dance-questions">
+            <h2>Dance Questions</h2>
+            <div class="question">
+                <p>5. Which orisha dance features bold and surprising movements?</p>
+                <input type="radio" name="q5" value="elegua"> Elegua<br>
+                <input type="radio" name="q5" value="oshun"> Oshun<br>
+                <input type="radio" name="q5" value="ogun"> Ogun<br>
+            </div>
+
+            <div class="question">
+                <p>6. What is the name of the dance shown below?</p>
+                <iframe width="300" height="200"
+                    src="https://www.youtube.com/embed/7xpjG-mV5qc">
+                    </iframe>
+                <br/>
+                <input type="radio" name="q6" value="oshun"> Son<br>
+                <input type="radio" name="q6" value="elegua"> Cuban Salsa<br>
+                <input type="radio" name="q6" value="ogun"> Rumba<br>
+            </div>
+
+            <div class="question">
+                <p>7. Which Afro-Cuban secular dance features a playful interaction between partners?</p>
+                <input type="radio" name="q7" value="rumba"> Rumba<br>
+                <input type="radio" name="q7" value="salsa"> Salsa<br>
+                <input type="radio" name="q7" value="son"> Son<br>
+            </div>
+        </section>
+
+        <section id="instrument-questions">
+            <h2>Instrument Questions</h2>
+            <div class="question">
+                <p>8. What are Bata drums, and what are their specific types?</p>
+                <input type="radio" name="q8" value="maracas"> Conga drums from Bantu influence: Tumbo, Segundo, and Quinto<br>
+                <input type="radio" name="q8" value="clave"> Special drums from Yoruba influence: Okonkolo, Itoteles, and Iya<br>
+                <input type="radio" name="q8" value="congas">  Djembe drums from West African influence: Dounouba, Sangban, and Kenkeni<br>
+            </div>
+
+            <div class="question">
+                <p>9. What is the instrument heard below?</p>
+                <input type="radio" name="q9" value="bongos"> Bongos<br>
+                <input type="radio" name="q9" value="timbales"> Timbales<br>
+                <input type="radio" name="q9" value="djembe"> Djembe<br>
+            </div>
+
+            <div class="question">
+                <p>10. What string instrument is essential to Guijira and comes from Spanish influence?</p>
+                <input type="radio" name="q10" value="tres"> Tres<br>
+                <input type="radio" name="q10" value="guitar"> Guitar<br>
+                <input type="radio" name="q10" value="mandolin"> Mandolin<br>
+            </div>
+        </section>
+
+        <button type="submit" class="btn btn-primary">Submit Quiz</button>
+    </form>
+
+    <div id="quizPopup" style="display: none;">
+        <div class="popupContent">
+            <span id="quizScore"></span>
+            <div class="popupButtons">
+                <a href="/music" class="btn btn-secondary">Review Music Page</a>
+                <a href="/" class="btn btn-secondary">Go to Home Page</a>
+                <button class="btn btn-danger closePopup">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
