@@ -28,4 +28,4 @@ def quiz():
     return render_template('quiz.html', data={}) 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=3000)
