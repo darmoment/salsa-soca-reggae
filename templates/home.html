@@ -7,40 +7,44 @@
     $(document).ready(function() {
         
     });
+
+    function redirectToMusic() {
+        window.location.href = "/music";
+    }
     
 </script>  
 
 <div class="container-fluid homeTab">
     <div class="top">
-        <h1>About Us</h1>
-        <p>This project is an educational website that highlights the cultural and historical connections between Cuban music and their African roots, particularly from Yoruba tribes. We aim to celebrate the African diaspora's impact on Cuban culture and broader understanding of these connections. </p>
-        <p>Click on the sections below to learn more!</p>
+        <h1>Exploring Afro-Cuban Music & Dance</h1>
+        <div class="row">
+            <div class="col-sm-6">
+                <p>Immerse yourself in the vibrant culture of Afro-Cuban music and dance! This educational website celebrates the cultural and historical connections between Cuban music, dance, and instruments and their African roots, particularly those from Yoruba tribes. Discover the rhythms, movements, and instruments that showcase the enduring legacy of the African diaspora in Cuba.</p>
+            </div>
+            <div class="col-sm right">
+                <button onclick="redirectToMusic()">Get Started!</button>
+                <p>Or click on the sections below to learn more!</p>
+            </div>
+        </div>
     </div>
     
-    <hr/>
     <div class="navstuff">
         <div class="row items">
-            <a href="music">
-                <div class="col homeCard">
-                    <img src="../static/assets/img/drums.jpeg" width="250px">
-                    <br>
-                    <br>
+            <a href="music" class="col-sm">
+                <div class="homeCard">
+                    <img src="../static/assets/img/drums.jpeg">
                     <h4>MUSIC</h4>
                 </div>
             </a>
-            <a href="dance">
-                <div class="col homeCard">
-                    <img src="../static/assets/img/dancers.jpg" width="250px">
-                    <br>
-                    <br>
+            <a href="dance" class="col-sm">
+                <div class="homeCard">
+                    <img src="../static/assets/img/dancers.jpg">
                     <h4>DANCE</h4>
                 </div>
             </a>
-            <a href="/">
-                <div class="col homeCard">
-                    <img src="../static/assets/img/clave.jpg" width="200px">
-                    <br>
-                    <br>
+            <a href="/" class="col-sm">
+                <div class="homeCard">
+                    <img src="../static/assets/img/clave.jpg">
                     <h4>INSTRUMENTS</h4>
                 </div>
             </a>
