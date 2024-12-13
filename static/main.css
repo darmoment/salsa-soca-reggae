@@ -219,6 +219,82 @@ Waiting Ajax stuff
 .musicTab {
     h1 {
         text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    p {
+        font-size: 18.5px;
+        color: #1f1f1f
+    }
+
+    #overview {
+        margin: auto;
+        width: 70%;
+        background-color: #3d98e0;
+        padding: 30px;
+        border-radius: 20px;
+        margin-bottom: 45px;
+    }
+
+    #yoruba-influence {
+        margin: auto;
+        width: 70%;
+        background-color: #f06575;
+        padding: 30px;
+        border-radius: 20px;
+        margin-bottom: 45px;
+    }
+
+    #musical-elements {
+        margin: auto;
+        width: 70%
+    }
+
+    #genres {
+        margin: auto;
+        width: 70%;
+    }
+
+    h4 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    h3 {
+        padding-top: 10px;
+    }
+
+    #rhythm-example {
+        text-align: center;
+        p {
+            font-size: 16px;
+        }
+    }
+
+    #rhythm-image {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .audio-example {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 47%;
+    }
+    
+    .audio-example span {
+        margin-right: 10px; /* Optional spacing */
+    }
+    
+    .audio-example audio {
+        max-width: 100%; /* Ensures it doesn't exceed container width */
+    }
+    .video-link {
+        margin: auto;
+        text-align: center;
     }
 
     
